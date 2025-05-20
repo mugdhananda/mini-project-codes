@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ AI Image Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-robot"></i> Dream Image Generator</h1>
+    
+    <div class="prompt-examples">
+      <span>Try: </span>
+      <button class="example-btn">"Majestic lion in space"</button>
+      <button class="example-btn">"Cyberpunk city at night"</button>
+      <button class="example-btn">"Watercolor sunset over mountains"</button>
+    </div>
+
+    <textarea id="prompt" placeholder="Describe your dream image..."></textarea>
+    
+    <button id="generate-btn" class="glow-on-hover">
+      <i class="fas fa-magic"></i> Generate Image
+    </button>
+    
+    <div class="result">
+      <div class="loading-spinner hidden">
+        <div class="spinner"></div>
+        <p>AI is painting your dream...</p>
+      </div>
+      <img id="output" src="" alt="Generated Image" class="hidden">
+      <button id="download-btn" class="hidden"><i class="fas fa-download"></i> Download</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
